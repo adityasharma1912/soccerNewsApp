@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.FirstActivity">
+    <item
+        android:id="@+id/item_about"
+        android:orderInCategory="100"
+        android:title="@string/about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_share_app_link"
+        android:orderInCategory="100"
+        android:title="@string/shareApp"
+        app:showAsAction="never" />
+</menu>
