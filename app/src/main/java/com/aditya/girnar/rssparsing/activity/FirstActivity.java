@@ -41,7 +41,7 @@ import java.util.List;
 
 public class FirstActivity extends Activity implements SwipeRefreshLayout.OnRefreshListener {
     private static final String TAG = FirstActivity.class.getCanonicalName();
-    private String finalUrl = "http://api.foxsports.com/v1/rss?partnerKey=zBaFxRyGKCfxBagJG9b8pqLyndmvo7UU&tag=soccer";
+    private String finalUrl = "https://api.foxsports.com/v1/rss?partnerKey=zBaFxRyGKCfxBagJG9b8pqLyndmvo7UU&tag=soccer";
     ProgressBar mProgressBar;
     private RecyclerView mRecyclerView;
     private SwipeRefreshLayout mSwipeRefreshLayout;
@@ -207,7 +207,7 @@ public class FirstActivity extends Activity implements SwipeRefreshLayout.OnRefr
                         }
                         break;
                     case XmlPullParser.TEXT:
-                        text = myParser.getText();
+                        text = myParser.getText().trim();
                         break;
                     case XmlPullParser.END_TAG:
                         if (name.equals("title") && singleNewsData != null) {
